@@ -1,27 +1,46 @@
-# tictactoe-ai
-Jeu de Tic Tac Toe avec IA et multijoueur en Python
-# Projet Tic Tac Toe avec IA
+# 🧠🎮 Projet DRL Tic Tac Toe en Ligne
 
-Ce projet est une implémentation du jeu **Tic Tac Toe (Morpion)** avec une **interface graphique** réalisée en **Pygame**, et une **Intelligence Artificielle** entraînée avec `Stable-Baselines3` utilisant la méthode **DQN (Deep Q-Network)**.
+> Projet réalisé dans le cadre du module **Fondements des Réseaux**, École Supérieure d’Économie Numérique, Université de la Manouba  
+> **Année universitaire :** 2024-2025  
+> **Réalisé par :** Safa Smati , Amal Hammami et Salma Benmahmoud
+> **Encadrant :** Dhraief Amine
 
-----------------------------------------------------------------------------------------
+---
 
-## Fonctionnement du jeu
+## Objectif
 
-### Modes de jeu disponibles :
-- **Joueur vs Joueur** : Deux humains jouent à tour de rôle.
-- **Joueur vs IA** : Vous affrontez une IA entraînée pour jouer au Tic Tac Toe.
-- **IA vs IA** : Deux IA s’affrontent automatiquement.
-- **En ligne (Client vs Serveur)** *(optionnel, si implémenté)*
+Ce projet consiste à développer un jeu Tic Tac Toe (morpion) en **Python**, jouable :
+- **Localement à 2 joueurs**
+- **Contre une intelligence artificielle (IA) entraînée par apprentissage par renforcement profond - DRL**
+- **En ligne contre un autre joueur via sockets réseau**
 
-L’interface vous propose un **menu principal** avec les différents modes de jeu. Vous pouvez aussi **quitter** ou **revenir au menu** à tout moment.
+Il a pour but de combiner des compétences en **programmation réseau**, **intelligence artificielle**, et **interfaces graphiques**.
 
-----------------------------------------------------------------------------------
+---
 
-## Étapes d’exécution
+##  Modes de jeu
 
- 1. Cloner le dépôt
+-  **Joueur vs Joueur local** : Deux joueurs jouent sur le même écran.
+-  **Joueur vs IA (DRL)** : L’IA joue avec un modèle entraîné avec Stable-Baselines3 (DQN).
+-  **Joueur vs Joueur en ligne** : Chaque joueur se connecte au serveur via socket.
 
+---
+
+##  Technologies utilisées
+
+| Composant         | Outils/Librairies                     |
+|-------------------|---------------------------------------|
+| Interface         | `pygame`                              |
+| IA (DRL)          | `stable-baselines3`, `gymnasium`      |
+| Réseau            | `socket` (TCP client/serveur)         |
+| Modèle IA         | `DQN` (Deep Q-Learning Network)       |
+| Entraînement      | `train.py` sur environnement custom   |
+
+---
+
+## Installation & Lancement
+
+### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/SalmaAmalSafa/tictactoe-ai.git
-cd tictactoe-ai
+git clone https://github.com/<ton-utilisateur>/tic-tac-toe-drl.git
+cd tic-tac-toe-drl
